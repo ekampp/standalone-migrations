@@ -5,14 +5,14 @@
 # stub: standalone_migrations 5.2.3 ruby lib
 
 Gem::Specification.new do |s|
-  s.name = "standalone_migrations"
+  s.name = "standalone_migrations".freeze
   s.version = "5.2.3"
 
-  s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.require_paths = ["lib"]
-  s.authors = ["Todd Huss", "Michael Grosser"]
-  s.date = "2017-06-10"
-  s.email = "thuss@gabrito.com"
+  s.required_rubygems_version = Gem::Requirement.new(">= 0".freeze) if s.respond_to? :required_rubygems_version=
+  s.require_paths = ["lib".freeze]
+  s.authors = ["Todd Huss".freeze, "Michael Grosser".freeze]
+  s.date = "2017-07-06"
+  s.email = "thuss@gabrito.com".freeze
   s.extra_rdoc_files = [
     "LICENSE",
     "README.markdown"
@@ -49,27 +49,27 @@ Gem::Specification.new do |s|
     "vendor/migration_helpers/init.rb",
     "vendor/migration_helpers/lib/migration_helper.rb"
   ]
-  s.homepage = "http://github.com/thuss/standalone-migrations"
-  s.licenses = ["MIT"]
-  s.rubygems_version = "2.4.8"
-  s.summary = "A thin wrapper to use Rails Migrations in non Rails projects"
+  s.homepage = "http://github.com/thuss/standalone-migrations".freeze
+  s.licenses = ["MIT".freeze]
+  s.rubygems_version = "2.6.11".freeze
+  s.summary = "A thin wrapper to use Rails Migrations in non Rails projects".freeze
 
   if s.respond_to? :specification_version then
     s.specification_version = 4
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<rake>, [">= 10.0"])
-      s.add_runtime_dependency(%q<activerecord>, ["< 5.2.0", ">= 4.2.7"])
-      s.add_runtime_dependency(%q<railties>, ["< 5.2.0", ">= 4.2.7"])
+      s.add_runtime_dependency(%q<rake>.freeze, [">= 10.0"])
+      s.add_runtime_dependency(%q<activerecord>.freeze, ["= 4.2.5.1"])
+      s.add_runtime_dependency(%q<railties>.freeze, ["= 4.2.5.1"])
     else
-      s.add_dependency(%q<rake>, [">= 10.0"])
-      s.add_dependency(%q<activerecord>, ["< 5.2.0", ">= 4.2.7"])
-      s.add_dependency(%q<railties>, ["< 5.2.0", ">= 4.2.7"])
+      s.add_dependency(%q<rake>.freeze, [">= 10.0"])
+      s.add_dependency(%q<activerecord>.freeze, ["= 4.2.5.1"])
+      s.add_dependency(%q<railties>.freeze, ["= 4.2.5.1"])
     end
   else
-    s.add_dependency(%q<rake>, [">= 10.0"])
-    s.add_dependency(%q<activerecord>, ["< 5.2.0", ">= 4.2.7"])
-    s.add_dependency(%q<railties>, ["< 5.2.0", ">= 4.2.7"])
+    s.add_dependency(%q<rake>.freeze, [">= 10.0"])
+    s.add_dependency(%q<activerecord>.freeze, ["= 4.2.5.1"])
+    s.add_dependency(%q<railties>.freeze, ["= 4.2.5.1"])
   end
 end
 
